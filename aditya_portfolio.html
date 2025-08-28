@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Narayan Mishra | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --text: #f5f7fa;
+      --muted: #b3b9c5;
+      --brand: #0ea5e9;
+      --brand-2: #22d3ee;
+      --card: #151b2f;
+      --border: rgba(255,255,255,0.08);
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(11,16,32,0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem;
+    }
+    nav a {
+      color: var(--muted);
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: var(--brand);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: auto;
+      padding: 5rem 1rem;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero p { color: var(--muted); }
+    .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(135deg,var(--brand),var(--brand-2));
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+      margin: auto;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--brand);
+      padding-left: 10px;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .muted { color: var(--muted); }
+    .skills span {
+      display: inline-block;
+      background: var(--brand);
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.3s;
+    }
+    .btn:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div><strong>Aditya Narayan Mishra</strong></div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <div>
+      <h1>Hello, I'm Aditya 👋</h1>
+      <p>Aspiring Software Engineer with a strong foundation in full stack and frontend development. Passionate about building efficient, user-friendly web applications and solving complex problems through code.</p>
+      <a href="Aditya_Narayan_Mishra_ATS_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+    <div class="avatar">A</div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Java</span><span>Python</span><span>JavaScript</span>
+      <span>HTML</span><span>CSS</span><span>jQuery</span><span>Bootstrap</span>
+      <span>MySQL</span><span>MongoDB</span><span>DSA</span>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>B.Tech in Computer Science</h3>
+        <p class="muted">Siksha ‘O’ Anusandhan, Bhubaneswar (2023–Present) | CGPA: 8.6</p>
+      </div>
+      <div class="card">
+        <h3>12th (Science)</h3>
+        <p class="muted">Jupiter Public School, Bhubaneswar (2021–2023) | 79.4%</p>
+      </div>
+      <div class="card">
+        <h3>10th (CBSE)</h3>
+        <p class="muted">Maharishi Vidya Mandir, Nayagarh (2010–2021) | 90.2%</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">
+      <p>AWS Solutions Architecture Job Simulation - Forage (Aug 2025)</p>
+      <p class="muted">Completed practical tasks in designing a simple, scalable hosting architecture.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Competitive Coding</h3>
+      <ul>
+        <li>Solved 150+ problems on CodeChef using Data Structures and Algorithms.</li>
+        <li>Continuously improving problem-solving skills through coding challenges.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <p>Email: <a href="mailto:adityanarayanmishra2005@gmail.com">adityanarayanmishra2005@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918249622217">+91 8249622217</a></p>
+        <p><a href="https://github.com/Aditya-07022005" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/aditya-narayan-mishra-155522275" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="card">
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required style="width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:none;">
+          <input type="email" id="email" placeholder="Your Email" required style="width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:none;">
+          <textarea id="message" rows="4" placeholder="Message" required style="width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:none;"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formMsg"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Aditya Narayan Mishra. Built with HTML, CSS & JS.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('formMsg').textContent = "Thanks! Your message has been sent.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
